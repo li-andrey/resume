@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font: normal 16px "Work Sans";
+  background-color: #008b8b;
+  color: rgba(236, 236, 236, 0.9);
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+/* a:visited {
+  color: lightcoral;
+} */
+
+h2 {
+  margin: 10px 0;
+}
+
+p {
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.img {
+  width: 300px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.headerAv {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.headerAv li {
+  display: inline;
+}
+
+.info {
+  margin: 10px 0px;
+  display: flex;
+}
+
+.info-text {
+  margin: 0 20px;
+}
+
+.form {
+  background-color: DarkSlateGray;
+  padding: 10px;
+}
+
+.form h2 {
+  text-align: center;
+}
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  display: inline-block;
+  margin-right: 20px;
+  width: 50%;
+  /*   width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.card {
+  padding: 0 0 10px 10px;
+  border: 1px solid #fff;
+  border-bottom-right-radius: 10%;
+  background-color: #016464;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: coral;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+.table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.table tr {
+  text-align: left;
+}
+
+.table th {
+  padding-bottom: 10px;
+}
+
+.table td:hover {
+  background: #008b8b;
+}
+
+/* .table tr:nth-child(even) {
+  background: #016969;
+}
+ */
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 450px;
+    margin: auto;
+  }
+  .info {
+    margin: 10px 0px;
+    display: block;
+  }
+  .info-text {
+    margin: 0;
+  }
+  .list li {
+    margin-left: 15px;
+  }
+  .table {
+    margin-left: 15px;
+  }
+  .form-group {
+    margin-left: 1px;
+  }
+}
